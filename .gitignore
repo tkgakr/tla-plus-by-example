@@ -1,0 +1,15 @@
+# TLC model-checker output
+states/
+*.out
+*_trace_*.tlc
+
+# VS Code TLA+ extension runtime data (keep .vscode/settings.json)
+.vscode/tlc/
+
+# Local TLA+ tool binaries and Java crash output
+tla2tools.jar
+*.class
+hs_err_pid*.log
+
+# macOS
+.DS_Store
