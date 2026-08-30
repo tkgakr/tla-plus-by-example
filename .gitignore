@@ -2,6 +2,8 @@
 states/
 *.out
 *_trace_*.tlc
+*_TTrace_*.tla
+*_TTrace_*.bin
 
 # VS Code TLA+ extension runtime data (keep .vscode/settings.json)
 .vscode/tlc/
