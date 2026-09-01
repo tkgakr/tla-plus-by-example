@@ -5,6 +5,10 @@ states/
 *_TTrace_*.tla
 *_TTrace_*.bin
 
+# Generated state-graph visualizations (tlc2.TLC -dump dot)
+*.dot
+*.svg
+
 # VS Code TLA+ extension runtime data (keep .vscode/settings.json)
 .vscode/tlc/
 
