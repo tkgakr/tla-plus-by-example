@@ -190,5 +190,6 @@ CHECK_DEADLOCK FALSE
 ## 次に読むもの
 
 - learning.tlapl.us の次ページは [Basic Operators](https://learning.tlapl.us/intro/basic-operators/) です。
+- [examples/05-basic-operators](../05-basic-operators) — 論理演算子、アクション、`UNCHANGED`、条件式
 - [examples/03-module-structure](../03-module-structure) — モジュール、`EXTENDS`、コメント、デバッグ出力
 - [examples/00-hello](../00-hello) — `Spec == Init /\ [][Next]_x` を使う最小構成
