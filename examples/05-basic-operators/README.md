@@ -211,5 +211,6 @@ PROPERTY NeverSkipYellowAlways
 ## 次に読むもの
 
 - learning.tlapl.us の次ページは [Sets](https://learning.tlapl.us/intro/sets/) です。
+- [examples/06-sets](../06-sets) — 集合演算、有限集合、内包表記、写像
 - [examples/04-variables-constants](../04-variables-constants) — 変数、定数、`TypeOK`
 - [examples/00-hello](../00-hello) — `Spec == Init /\ [][Next]_x` の最小例
