@@ -250,5 +250,6 @@ INVARIANT SetExamplesOK
 ## 次に読むもの
 
 - learning.tlapl.us の次ページは [Functions](https://learning.tlapl.us/intro/functions/) です。
+- [examples/07-functions](../07-functions) — 関数の定義、定義域、関数集合、`EXCEPT` による更新
 - [examples/05-basic-operators](../05-basic-operators) — 論理演算子、アクション、`UNCHANGED`、条件式
 - [examples/04-variables-constants](../04-variables-constants) — 変数、定数、`TypeOK`
