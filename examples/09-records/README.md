@@ -242,7 +242,8 @@ INVARIANT RecordExamplesOK
 
 ## 次に読むもの
 
-- learning.tlapl.us の次ページは [TLC Configuration](https://learning.tlapl.us/intro/configuration/) です。
+- 次のページ: [examples/10-tlc-config](../10-tlc-config)（TLC の設定ファイル）
+- learning.tlapl.us の次ページは [TLC Configuration](https://learning.tlapl.us/intro/tlc-config/) です。
 - [examples/08-sequences](../08-sequences) — 関数としてのシーケンス、`DOMAIN`
 - [examples/07-functions](../07-functions) — 関数の定義、参照、関数集合、`EXCEPT`、`@`
 - [examples/06-sets](../06-sets) — 集合への所属判定と要素数
