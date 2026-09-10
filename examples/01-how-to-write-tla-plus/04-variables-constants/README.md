@@ -5,7 +5,7 @@
 本家ページの要点とサンプルを、このリポジトリでそのまま実行できる日本語教材として再構成しています。
 題材は、上限 `N` まで数える `count` と、全体で 5 まで増える `total` を持つカウンタです。
 
-前のページ: [examples/03-module-structure](../03-module-structure)（モジュールの構造）
+前のページ: [examples/01-how-to-write-tla-plus/03-module-structure](../03-module-structure)（モジュールの構造）
 
 ---
 
@@ -147,7 +147,7 @@ TLC は初期状態と、そこから到達可能なすべての状態で `TypeO
 CLI なら次のコマンドです。
 
 ```bash
-cd examples/04-variables-constants
+cd examples/01-how-to-write-tla-plus/04-variables-constants
 java -cp "$(ls -d ~/.vscode/extensions/tlaplus.vscode-ide-*/tools/tla2tools.jar | tail -1)" \
   tlc2.TLC -workers 1 -config VarsAndConsts.cfg VarsAndConsts.tla
 ```
@@ -190,6 +190,6 @@ CHECK_DEADLOCK FALSE
 ## 次に読むもの
 
 - learning.tlapl.us の次ページは [Basic Operators](https://learning.tlapl.us/intro/basic-operators/) です。
-- [examples/05-basic-operators](../05-basic-operators) — 論理演算子、アクション、`UNCHANGED`、条件式
-- [examples/03-module-structure](../03-module-structure) — モジュール、`EXTENDS`、コメント、デバッグ出力
-- [examples/00-hello](../00-hello) — `Spec == Init /\ [][Next]_x` を使う最小構成
+- [examples/01-how-to-write-tla-plus/05-basic-operators](../05-basic-operators) — 論理演算子、アクション、`UNCHANGED`、条件式
+- [examples/01-how-to-write-tla-plus/03-module-structure](../03-module-structure) — モジュール、`EXTENDS`、コメント、デバッグ出力
+- [examples/01-how-to-write-tla-plus/00-hello](../00-hello) — `Spec == Init /\ [][Next]_x` を使う最小構成

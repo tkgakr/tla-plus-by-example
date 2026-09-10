@@ -5,7 +5,7 @@
 本家ページの要点とユーザーアカウントのサンプルを、このリポジトリで実行できる日本語教材として再構成しています。
 レコードの生成、フィールド参照、レコード集合、`EXCEPT` による更新、関数としてのレコードを扱います。
 
-前のページ: [examples/08-sequences](../08-sequences)（シーケンス）
+前のページ: [examples/01-how-to-write-tla-plus/08-sequences](../08-sequences)（シーケンス）
 
 ---
 
@@ -205,7 +205,7 @@ Rename ==
 CLI なら次のコマンドです。
 
 ```bash
-cd examples/09-records
+cd examples/01-how-to-write-tla-plus/09-records
 java -cp "$(ls -d ~/.vscode/extensions/tlaplus.vscode-ide-*/tools/tla2tools.jar | tail -1)" \
   tlc2.TLC -workers 1 -config UserAccounts.cfg UserAccounts.tla
 ```
@@ -242,8 +242,8 @@ INVARIANT RecordExamplesOK
 
 ## 次に読むもの
 
-- 次のページ: [examples/10-tlc-config](../10-tlc-config)（TLC の設定ファイル）
+- 次のページ: [examples/01-how-to-write-tla-plus/10-tlc-config](../10-tlc-config)（TLC の設定ファイル）
 - learning.tlapl.us の次ページは [TLC Configuration](https://learning.tlapl.us/intro/tlc-config/) です。
-- [examples/08-sequences](../08-sequences) — 関数としてのシーケンス、`DOMAIN`
-- [examples/07-functions](../07-functions) — 関数の定義、参照、関数集合、`EXCEPT`、`@`
-- [examples/06-sets](../06-sets) — 集合への所属判定と要素数
+- [examples/01-how-to-write-tla-plus/08-sequences](../08-sequences) — 関数としてのシーケンス、`DOMAIN`
+- [examples/01-how-to-write-tla-plus/07-functions](../07-functions) — 関数の定義、参照、関数集合、`EXCEPT`、`@`
+- [examples/01-how-to-write-tla-plus/06-sets](../06-sets) — 集合への所属判定と要素数

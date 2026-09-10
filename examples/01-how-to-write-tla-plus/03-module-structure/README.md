@@ -5,7 +5,7 @@
 本家ページのサンプルを、このリポジトリでそのまま実行できる日本語教材として再構成しています。
 題材は、0 から 1 ずつ増える単純なカウンタです。
 
-前のページ: [examples/02-tla-intuition](../02-tla-intuition)（TLA+ / TLC の直感）
+前のページ: [examples/01-how-to-write-tla-plus/02-tla-intuition](../02-tla-intuition)（TLA+ / TLC の直感）
 
 ---
 
@@ -163,7 +163,7 @@ INVARIANT Bound
 CLI なら次のコマンドです。
 
 ```bash
-cd examples/03-module-structure
+cd examples/01-how-to-write-tla-plus/03-module-structure
 java -cp "$(ls -d ~/.vscode/extensions/tlaplus.vscode-ide-*/tools/tla2tools.jar | tail -1)" \
   tlc2.TLC -workers 1 -config MySpec.cfg MySpec.tla
 ```
@@ -197,5 +197,5 @@ x = 5
 ## 次に読むもの
 
 - learning.tlapl.us の次ページは [Variables & Constants](https://learning.tlapl.us/intro/variables-constants/) です。
-- [examples/02-tla-intuition](../02-tla-intuition) — 状態機械として TLA+ を読む
-- [examples/00-hello](../00-hello) — `Spec` と `TypeOK` を含む最小構成
+- [examples/01-how-to-write-tla-plus/02-tla-intuition](../02-tla-intuition) — 状態機械として TLA+ を読む
+- [examples/01-how-to-write-tla-plus/00-hello](../00-hello) — `Spec` と `TypeOK` を含む最小構成

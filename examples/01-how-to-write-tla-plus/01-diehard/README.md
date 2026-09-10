@@ -86,7 +86,7 @@ DieHard なら「最小手数の解答」が得られる、ということです
 ### パース — モジュールの読み込みと検証
 
 ```
-Parsing file .../examples/01-diehard/DieHard.tla
+Parsing file .../examples/01-how-to-write-tla-plus/01-diehard/DieHard.tla
 Parsing file .../Naturals.tla (jar:...!/tla2sany/StandardModules/Naturals.tla)
 Semantic processing of module Naturals
 Semantic processing of module DieHard
@@ -212,13 +212,13 @@ The depth of the complete state graph search is 8.
 本家ページ末尾の「Local Development」に相当します。
 
 - **VS Code TLA+ 拡張** — `tlaplus.vscode-ide`。構文ハイライト、`TLA+: Check model with TLC`、
-  反例トレースのビューアが付きます。このリポジトリの [.vscode/settings.json](../../.vscode/settings.json) では
+  反例トレースのビューアが付きます。このリポジトリの [.vscode/settings.json](../../../.vscode/settings.json) では
   `-workers 1 -coverage 1` を既定にしています。
 - **CLI（任意）** — CI で回したいなど、VS Code を開かずに実行したい場合のみ。拡張に同梱の
   `tla2tools.jar` をそのまま使えます。
 
   ```bash
-  cd examples/01-diehard && java -cp "$(ls -d ~/.vscode/extensions/tlaplus.vscode-ide-*/tools/tla2tools.jar | tail -1)" tlc2.TLC -workers 1 -config DieHard.cfg DieHard.tla
+  cd examples/01-how-to-write-tla-plus/01-diehard && java -cp "$(ls -d ~/.vscode/extensions/tlaplus.vscode-ide-*/tools/tla2tools.jar | tail -1)" tlc2.TLC -workers 1 -config DieHard.cfg DieHard.tla
   ```
 
   単体で欲しい場合は [tlaplus/tlaplus のリリース](https://github.com/tlaplus/tlaplus/releases)から取得してください。
@@ -228,4 +228,4 @@ The depth of the complete state graph search is 8.
 
 ## 次に読むもの
 
-- [examples/00-hello](../00-hello) — 変数ひとつだけの最小の仕様（`Init` / `Next` / `Spec` / `TypeOK` の型紙）
+- [examples/01-how-to-write-tla-plus/00-hello](../00-hello) — 変数ひとつだけの最小の仕様（`Init` / `Next` / `Spec` / `TypeOK` の型紙）

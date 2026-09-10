@@ -4,7 +4,7 @@
 本家は「構文に入る前に、TLA+ が何をしているのかの直感を作る」ページです。掲載されている DieHard 仕様を
 **そのまま**このディレクトリに置き、ローカルの TLC で動かして確認できるようにしています。
 
-前のページ: [examples/01-diehard](../01-diehard)（プラットフォームの使い方）
+前のページ: [examples/01-how-to-write-tla-plus/01-diehard](../01-diehard)（プラットフォームの使い方）
 
 ---
 
@@ -112,7 +112,7 @@ CHECK_DEADLOCK FALSE
 CLI なら:
 
 ```bash
-cd examples/02-tla-intuition && java -cp "$(ls -d ~/.vscode/extensions/tlaplus.vscode-ide-*/tools/tla2tools.jar | tail -1)" tlc2.TLC -workers 1 -config DieHard.cfg DieHard.tla
+cd examples/01-how-to-write-tla-plus/02-tla-intuition && java -cp "$(ls -d ~/.vscode/extensions/tlaplus.vscode-ide-*/tools/tla2tools.jar | tail -1)" tlc2.TLC -workers 1 -config DieHard.cfg DieHard.tla
 ```
 
 ### 実際の出力（この環境で確認済み）
@@ -228,5 +228,5 @@ TLC の言う「デッドロック」は `Next` を満たす次状態が 1 つ�
 ## 次に読むもの
 
 - learning.tlapl.us の次ページは [Module Structure](https://learning.tlapl.us/intro/module-structure/) です。
-- [examples/00-hello](../00-hello) — 変数ひとつだけの最小の仕様
-- [examples/01-diehard](../01-diehard) — TLC の出力の読み方
+- [examples/01-how-to-write-tla-plus/00-hello](../00-hello) — 変数ひとつだけの最小の仕様
+- [examples/01-how-to-write-tla-plus/01-diehard](../01-diehard) — TLC の出力の読み方

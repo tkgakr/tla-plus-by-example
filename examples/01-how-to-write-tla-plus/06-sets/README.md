@@ -5,7 +5,7 @@
 本家ページの要点と色を選択するサンプルを、このリポジトリで実行できる日本語教材として再構成しています。
 集合リテラル、所属判定、集合演算、有限集合、内包表記、写像、整数の範囲を扱います。
 
-前のページ: [examples/05-basic-operators](../05-basic-operators)（基本演算子）
+前のページ: [examples/01-how-to-write-tla-plus/05-basic-operators](../05-basic-operators)（基本演算子）
 
 ---
 
@@ -213,7 +213,7 @@ TypeOK == picked \subseteq Colors
 CLI なら次のコマンドです。
 
 ```bash
-cd examples/06-sets
+cd examples/01-how-to-write-tla-plus/06-sets
 java -cp "$(ls -d ~/.vscode/extensions/tlaplus.vscode-ide-*/tools/tla2tools.jar | tail -1)" \
   tlc2.TLC -workers 1 -config Sets.cfg Sets.tla
 ```
@@ -250,6 +250,6 @@ INVARIANT SetExamplesOK
 ## 次に読むもの
 
 - learning.tlapl.us の次ページは [Functions](https://learning.tlapl.us/intro/functions/) です。
-- [examples/07-functions](../07-functions) — 関数の定義、定義域、関数集合、`EXCEPT` による更新
-- [examples/05-basic-operators](../05-basic-operators) — 論理演算子、アクション、`UNCHANGED`、条件式
-- [examples/04-variables-constants](../04-variables-constants) — 変数、定数、`TypeOK`
+- [examples/01-how-to-write-tla-plus/07-functions](../07-functions) — 関数の定義、定義域、関数集合、`EXCEPT` による更新
+- [examples/01-how-to-write-tla-plus/05-basic-operators](../05-basic-operators) — 論理演算子、アクション、`UNCHANGED`、条件式
+- [examples/01-how-to-write-tla-plus/04-variables-constants](../04-variables-constants) — 変数、定数、`TypeOK`

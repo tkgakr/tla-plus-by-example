@@ -6,7 +6,7 @@
 日本語教材として再構成しています。`.cfg` に記述する `INIT`、`NEXT`、`INVARIANT`、`CONSTANT`、
 `PROPERTY`、`SYMMETRY`、`CHECK_DEADLOCK` を扱います。
 
-前のページ: [examples/09-records](../09-records)（レコード）
+前のページ: [examples/01-how-to-write-tla-plus/09-records](../09-records)（レコード）
 
 ---
 
@@ -209,7 +209,7 @@ CHECK_DEADLOCK FALSE
 CLI なら次のコマンドです。
 
 ```bash
-cd examples/10-tlc-config
+cd examples/01-how-to-write-tla-plus/10-tlc-config
 java -cp "$(ls -d ~/.vscode/extensions/tlaplus.vscode-ide-*/tools/tla2tools.jar | tail -1)" \
   tlc2.TLC -workers 1 -config WorkerPool.cfg WorkerPool.tla
 ```
@@ -245,6 +245,6 @@ java -cp "$(ls -d ~/.vscode/extensions/tlaplus.vscode-ide-*/tools/tla2tools.jar 
 
 ## 次に読むもの
 
-- [examples/09-records](../09-records) — レコード集合を使った `TypeOK` と `.cfg` による不変条件の指定
-- [examples/04-variables-constants](../04-variables-constants) — 変数、定数、`CHECK_DEADLOCK`
-- [examples/00-hello](../00-hello) — `SPECIFICATION` を使う最小構成
+- [examples/01-how-to-write-tla-plus/09-records](../09-records) — レコード集合を使った `TypeOK` と `.cfg` による不変条件の指定
+- [examples/01-how-to-write-tla-plus/04-variables-constants](../04-variables-constants) — 変数、定数、`CHECK_DEADLOCK`
+- [examples/01-how-to-write-tla-plus/00-hello](../00-hello) — `SPECIFICATION` を使う最小構成

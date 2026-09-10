@@ -6,7 +6,7 @@
 関数の定義、値の参照、`DOMAIN`、関数集合、`EXCEPT`、`@` を扱います。
 実行用には、固定した 2 個のキーに数値を保存する小さなモデルをこの教材用に用意しました。
 
-前のページ: [examples/06-sets](../06-sets)（集合）
+前のページ: [examples/01-how-to-write-tla-plus/06-sets](../06-sets)（集合）
 
 ---
 
@@ -191,7 +191,7 @@ Next == Put \/ Increment
 CLI なら次のコマンドです。
 
 ```bash
-cd examples/07-functions
+cd examples/01-how-to-write-tla-plus/07-functions
 java -cp "$(ls -d ~/.vscode/extensions/tlaplus.vscode-ide-*/tools/tla2tools.jar | tail -1)" \
   tlc2.TLC -workers 1 -config Functions.cfg Functions.tla
 ```
@@ -237,6 +237,6 @@ INVARIANT FunctionExamplesOK
 ## 次に読むもの
 
 - learning.tlapl.us の次ページは [Sequences](https://learning.tlapl.us/intro/sequences/) です。
-- [examples/06-sets](../06-sets) — 集合演算、有限集合、内包表記、写像
-- [examples/05-basic-operators](../05-basic-operators) — アクション、プライム記号、`UNCHANGED`
-- [examples/04-variables-constants](../04-variables-constants) — 変数、定数、`TypeOK`
+- [examples/01-how-to-write-tla-plus/06-sets](../06-sets) — 集合演算、有限集合、内包表記、写像
+- [examples/01-how-to-write-tla-plus/05-basic-operators](../05-basic-operators) — アクション、プライム記号、`UNCHANGED`
+- [examples/01-how-to-write-tla-plus/04-variables-constants](../04-variables-constants) — 変数、定数、`TypeOK`

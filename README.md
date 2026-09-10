@@ -6,21 +6,37 @@
 `How to Write TLA+` の構文入門は完了しました。次の目標は、構文を増やすことではなく、並行システムを
 **モデル化し、性質を書き、TLC の反例から設計を直す一連の流れ**を自力で回せるようになることです。
 
-## 現在地
+## 教材構成
+
+教材は、連番付きのコースディレクトリと、その配下の章ディレクトリという二段階で管理します。
+現在完了しているのは `01-how-to-write-tla-plus` です。それ以降は学習の進行に合わせて追加します。
+
+```text
+examples/
+├── 01-how-to-write-tla-plus/          # 完了: TLA+ の構文と TLC の基本
+├── 02-blocking-queue-tutorial/        # 次: 並行システムのモデル検査
+├── 03-liveness-fairness/              # 時相論理、公平性、ライブネス
+├── 04-distributed-protocols-refinement/ # 分散プロトコルと refinement
+├── 05-community-specifications/       # 既存仕様の読解と変更
+├── 06-capstone/                       # 独自題材による最終課題
+└── 07-advanced-topics/                # 目的別の発展課題
+```
+
+### `01-how-to-write-tla-plus` — How to Write TLA+
 
 | 章 | 内容 | 教材 |
 | --- | --- | --- |
-| 0 | 最小の仕様 | [`examples/00-hello`](examples/00-hello) |
-| 1 | プラットフォームと TLC | [`examples/01-diehard`](examples/01-diehard) |
-| 2 | 状態機械としての TLA+ | [`examples/02-tla-intuition`](examples/02-tla-intuition) |
-| 3 | モジュール構造 | [`examples/03-module-structure`](examples/03-module-structure) |
-| 4 | 変数と定数 | [`examples/04-variables-constants`](examples/04-variables-constants) |
-| 5 | 基本演算子 | [`examples/05-basic-operators`](examples/05-basic-operators) |
-| 6 | 集合 | [`examples/06-sets`](examples/06-sets) |
-| 7 | 関数 | [`examples/07-functions`](examples/07-functions) |
-| 8 | シーケンス | [`examples/08-sequences`](examples/08-sequences) |
-| 9 | レコード | [`examples/09-records`](examples/09-records) |
-| 10 | TLC の設定 | [`examples/10-tlc-config`](examples/10-tlc-config) |
+| 00 | 最小の仕様 | [`00-hello`](examples/01-how-to-write-tla-plus/00-hello) |
+| 01 | プラットフォームと TLC | [`01-diehard`](examples/01-how-to-write-tla-plus/01-diehard) |
+| 02 | 状態機械としての TLA+ | [`02-tla-intuition`](examples/01-how-to-write-tla-plus/02-tla-intuition) |
+| 03 | モジュール構造 | [`03-module-structure`](examples/01-how-to-write-tla-plus/03-module-structure) |
+| 04 | 変数と定数 | [`04-variables-constants`](examples/01-how-to-write-tla-plus/04-variables-constants) |
+| 05 | 基本演算子 | [`05-basic-operators`](examples/01-how-to-write-tla-plus/05-basic-operators) |
+| 06 | 集合 | [`06-sets`](examples/01-how-to-write-tla-plus/06-sets) |
+| 07 | 関数 | [`07-functions`](examples/01-how-to-write-tla-plus/07-functions) |
+| 08 | シーケンス | [`08-sequences`](examples/01-how-to-write-tla-plus/08-sequences) |
+| 09 | レコード | [`09-records`](examples/01-how-to-write-tla-plus/09-records) |
+| 10 | TLC の設定 | [`10-tlc-config`](examples/01-how-to-write-tla-plus/10-tlc-config) |
 
 ここまでで、`Init`、`Next`、不変条件、基本的なデータ構造、定数の割り当て、対称性、簡単な時相性質を
 読んで実行できる状態です。一方、実際の設計に使うには、次の力がまだ必要です。
@@ -35,7 +51,7 @@
 
 各フェーズの完了条件を満たしたら、次のフェーズへ進みます。
 
-### Phase 1 — BlockingQueue で検証の一周を経験する
+### `02-blocking-queue-tutorial` — BlockingQueue Tutorial
 
 最優先で [BlockingQueue Tutorial](https://learning.tlapl.us/blocking-queue/introduction/) を順番どおりに
 日本語再構成します。共有バッファ、producer、consumer、待機集合を持つ一つのモデルを段階的に変更するため、
@@ -45,18 +61,18 @@
 
 | # | テーマ | 身につけること |
 | --- | --- | --- |
-| 11 | BlockingQueue 導入 | 実装からモデルへ何を残すかを決める |
-| 12 | 最小構成の状態グラフ | 状態と遷移をグラフとして読む |
-| 13 | 構成を大きくする | 定数変更と状態数の増え方を観測する |
-| 14 | 状態グラフのデバッグ | 正しそうなモデル自体を疑う |
-| 15 | デッドロックの安全性 | 「全員待機」を不変条件で表す |
-| 16 | 定数から変数へ | 一回の探索で複数構成を扱う |
-| 17 | 対称性集合 | ID の置換を同一視して状態を減らす |
-| 18 | デッドロック条件 | 反例群から成立条件を推測し検査する |
-| 19 | `VIEW` による抽象化 | 性質に不要なバッファ内容を捨てる |
-| 20 | 非決定的な通知 | 実装が許す選択を漏れなくモデル化する |
-| 21 | `notifyAll` | 正しさと効率の異なる修正を比較する |
-| 22 | 論理的に二つの mutex | 待機集合を分離して設計を改善する |
+| 01 | BlockingQueue 導入 | 実装からモデルへ何を残すかを決める |
+| 02 | 最小構成の状態グラフ | 状態と遷移をグラフとして読む |
+| 03 | 構成を大きくする | 定数変更と状態数の増え方を観測する |
+| 04 | 状態グラフのデバッグ | 正しそうなモデル自体を疑う |
+| 05 | デッドロックの安全性 | 「全員待機」を不変条件で表す |
+| 06 | 定数から変数へ | 一回の探索で複数構成を扱う |
+| 07 | 対称性集合 | ID の置換を同一視して状態を減らす |
+| 08 | デッドロック条件 | 反例群から成立条件を推測し検査する |
+| 09 | `VIEW` による抽象化 | 性質に不要なバッファ内容を捨てる |
+| 10 | 非決定的な通知 | 実装が許す選択を漏れなくモデル化する |
+| 11 | `notifyAll` | 正しさと効率の異なる修正を比較する |
+| 12 | 論理的に二つの mutex | 待機集合を分離して設計を改善する |
 
 このフェーズの完了条件:
 
@@ -65,7 +81,7 @@
 - 対称性や `VIEW` が、どの性質を保存するか確認せずには使えないと理解している
 - 「期待する動作」だけでなく、実装が許す非決定的な動作を `Next` に含められる
 
-### Phase 2 — 時相論理、公平性、ライブネスを固める
+### `03-liveness-fairness` — 時相論理、公平性、ライブネス
 
 現在の `WorkerPool` を発展させ、次を一つずつ独立した小例にします。
 
@@ -75,12 +91,12 @@
 4. `WF_vars(A)` と `SF_vars(A)` の差
 5. 公平性がないために発生するライブネス反例
 
-教材候補は `examples/30-liveness-fairness` とし、同じモデルに「成立する設定」「公平性を外して失敗する設定」
+同じモデルに「成立する設定」「公平性を外して失敗する設定」
 「強公平性が必要になる設定」を用意します。
 
 完了条件は、`<>Done` が直感的に正しそうでも自動的には成立しない理由を、無限の反例を使って説明できることです。
 
-### Phase 3 — 分散プロトコルと refinement を学ぶ
+### `04-distributed-protocols-refinement` — 分散プロトコルと refinement
 
 [TLA+ Video Course](https://lamport.azurewebsites.net/video/videos.html) のうち、次を順に扱います。
 
@@ -101,7 +117,7 @@
 - 高水準モデルと詳細モデルの変数を対応付ける refinement mapping を書ける
 - 実装の詳細を増やしても、外から観測できる振る舞いが高水準仕様に収まることを検査できる
 
-### Phase 4 — 既存仕様を読み、自分の題材を一つ完成させる
+### `05-community-specifications` / `06-capstone` — 読解と独自題材
 
 まず [TLA+ Examples](https://github.com/tlaplus/Examples) または
 [TLA+ By Example の Community Specifications](https://learning.tlapl.us/#community-specifications) から、
@@ -120,7 +136,7 @@
 最終課題の成果物:
 
 ```text
-examples/50-capstone/
+examples/06-capstone/
 ├── README.md          # 目的、抽象化、仮定、検査結果、分かったこと
 ├── System.tla         # 仕様
 ├── System.cfg         # 基本モデル
@@ -131,7 +147,7 @@ examples/50-capstone/
 完了条件は、少なくとも `TypeOK`、設計上の安全性 2 個、ライブネス 1 個を定義し、意図的にバグを入れた版の
 反例と修正版の検査結果を README で説明できることです。
 
-### Phase 5 — 目的に応じて選ぶ発展課題
+### `07-advanced-topics` — 目的に応じて選ぶ発展課題
 
 以下は全員が直ちに進む必修項目ではありません。最終課題を一つ終えてから、目的に合わせて選びます。
 
@@ -171,7 +187,7 @@ Java と [TLA+ for Visual Studio Code](https://marketplace.visualstudio.com/item
 CLI では、各ディレクトリに移動して同名の `.cfg` を指定します。例:
 
 ```bash
-cd examples/10-tlc-config
+cd examples/01-how-to-write-tla-plus/10-tlc-config
 java -cp "$(ls -d ~/.vscode/extensions/tlaplus.vscode-ide-*/tools/tla2tools.jar | tail -1)" \
   tlc2.TLC -workers 1 -config WorkerPool.cfg WorkerPool.tla
 ```
@@ -184,9 +200,9 @@ java -cp "$(ls -d ~/.vscode/extensions/tlaplus.vscode-ide-*/tools/tla2tools.jar 
 
 迷ったら、次の 3 項目だけを進めます。
 
-1. `examples/11-blocking-queue-introduction` を作り、実装から抽出する状態とアクションを日本語で定義する
-2. `examples/12-blocking-queue-state-graph` で最小構成の全状態グラフを生成し、各辺を説明する
-3. `examples/15-blocking-queue-safety` まで進め、最初のデッドロック反例を README に読み下す
+1. `examples/02-blocking-queue-tutorial/01-introduction` を作り、実装から抽出する状態とアクションを日本語で定義する
+2. `examples/02-blocking-queue-tutorial/02-state-graph` で最小構成の全状態グラフを生成し、各辺を説明する
+3. `examples/02-blocking-queue-tutorial/05-safety` まで進め、最初のデッドロック反例を README に読み下す
 
 ここまで終えた時点で一度立ち止まり、「モデルのバグ」と「対象システムのバグ」を区別できているかを確認してから、
 対称性と `VIEW` に進みます。

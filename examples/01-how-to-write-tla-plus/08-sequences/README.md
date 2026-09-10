@@ -6,7 +6,7 @@
 シーケンスのリテラルと参照、`Seq`、`Len`、`Head`、`Tail`、`Append`、連結、`SubSeq`、
 `SelectSeq`、関数としてのシーケンスを扱います。
 
-前のページ: [examples/07-functions](../07-functions)（関数）
+前のページ: [examples/01-how-to-write-tla-plus/07-functions](../07-functions)（関数）
 
 ---
 
@@ -188,7 +188,7 @@ TypeOK ==
 CLI なら次のコマンドです。
 
 ```bash
-cd examples/08-sequences
+cd examples/01-how-to-write-tla-plus/08-sequences
 java -cp "$(ls -d ~/.vscode/extensions/tlaplus.vscode-ide-*/tools/tla2tools.jar | tail -1)" \
   tlc2.TLC -workers 1 -config BoundedStack.cfg BoundedStack.tla
 ```
@@ -225,6 +225,6 @@ INVARIANT SequenceExamplesOK
 ## 次に読むもの
 
 - learning.tlapl.us の次ページは [Records](https://learning.tlapl.us/intro/records/) です。
-- [examples/07-functions](../07-functions) — 関数の定義、`DOMAIN`、関数集合、`EXCEPT`
-- [examples/06-sets](../06-sets) — 集合の順序・重複とシーケンスとの違い
-- [examples/05-basic-operators](../05-basic-operators) — アクション、プライム記号、`UNCHANGED`
+- [examples/01-how-to-write-tla-plus/07-functions](../07-functions) — 関数の定義、`DOMAIN`、関数集合、`EXCEPT`
+- [examples/01-how-to-write-tla-plus/06-sets](../06-sets) — 集合の順序・重複とシーケンスとの違い
+- [examples/01-how-to-write-tla-plus/05-basic-operators](../05-basic-operators) — アクション、プライム記号、`UNCHANGED`

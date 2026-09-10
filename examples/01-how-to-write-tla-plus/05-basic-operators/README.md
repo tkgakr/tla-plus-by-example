@@ -6,7 +6,7 @@
 赤 → 青 → 黄 → 赤と変化する信号機を使い、論理演算子、`Init` / `Next`、プライム記号、
 `UNCHANGED`、`IF / THEN / ELSE` をまとめて確認します。
 
-前のページ: [examples/04-variables-constants](../04-variables-constants)（変数と定数）
+前のページ: [examples/01-how-to-write-tla-plus/04-variables-constants](../04-variables-constants)（変数と定数）
 
 ---
 
@@ -175,7 +175,7 @@ TLC は同じ状態を再訪した時点で、それより先を改めて展開�
 CLI なら次のコマンドです。
 
 ```bash
-cd examples/05-basic-operators
+cd examples/01-how-to-write-tla-plus/05-basic-operators
 java -cp "$(ls -d ~/.vscode/extensions/tlaplus.vscode-ide-*/tools/tla2tools.jar | tail -1)" \
   tlc2.TLC -workers 1 -config BasicOperators.cfg BasicOperators.tla
 ```
@@ -211,6 +211,6 @@ PROPERTY NeverSkipYellowAlways
 ## 次に読むもの
 
 - learning.tlapl.us の次ページは [Sets](https://learning.tlapl.us/intro/sets/) です。
-- [examples/06-sets](../06-sets) — 集合演算、有限集合、内包表記、写像
-- [examples/04-variables-constants](../04-variables-constants) — 変数、定数、`TypeOK`
-- [examples/00-hello](../00-hello) — `Spec == Init /\ [][Next]_x` の最小例
+- [examples/01-how-to-write-tla-plus/06-sets](../06-sets) — 集合演算、有限集合、内包表記、写像
+- [examples/01-how-to-write-tla-plus/04-variables-constants](../04-variables-constants) — 変数、定数、`TypeOK`
+- [examples/01-how-to-write-tla-plus/00-hello](../00-hello) — `Spec == Init /\ [][Next]_x` の最小例
