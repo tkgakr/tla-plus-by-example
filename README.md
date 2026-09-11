@@ -14,7 +14,7 @@
 ```text
 examples/
 ├── 01-how-to-write-tla-plus/          # 完了: TLA+ の構文と TLC の基本
-├── 02-blocking-queue-tutorial/        # 次: 並行システムのモデル検査
+├── 02-blocking-queue-tutorial/        # 進行中: 並行システムのモデル検査
 ├── 03-liveness-fairness/              # 時相論理、公平性、ライブネス
 ├── 04-distributed-protocols-refinement/ # 分散プロトコルと refinement
 ├── 05-community-specifications/       # 既存仕様の読解と変更
@@ -57,7 +57,13 @@ examples/
 日本語再構成します。共有バッファ、producer、consumer、待機集合を持つ一つのモデルを段階的に変更するため、
 「仕様を書く → TLC で反例を得る → 原因を説明する → 設計を直す」が連続した物語として学べます。
 
-追加するディレクトリの案は次のとおりです。
+現在の教材:
+
+| 章 | 内容 | 教材 |
+| --- | --- | --- |
+| 01 | BlockingQueue 導入 | [`01-introduction`](examples/02-blocking-queue-tutorial/01-introduction) |
+
+全体の章構成は次のとおりです。未作成の章は学習の進行に合わせて追加します。
 
 | # | テーマ | 身につけること |
 | --- | --- | --- |
