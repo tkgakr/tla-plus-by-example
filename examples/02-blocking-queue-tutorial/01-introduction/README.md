@@ -260,7 +260,7 @@ The depth of the complete state graph search is 8.
 
 ## 次に読むもの
 
-- [BlockingQueue Tutorial / State Graph](https://learning.tlapl.us/blocking-queue/state-graph/) — 最小構成の全状態グラフを生成し、状態と辺を読む
+- [最小構成の状態グラフ](../02-state-graph) — 最小構成の全状態グラフを生成し、状態と辺を読む
 - [TLC の設定ファイル](../../01-how-to-write-tla-plus/10-tlc-config) — `INIT`、`NEXT`、`INVARIANT` の復習
 
 ## 参考資料
