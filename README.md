@@ -63,6 +63,7 @@ examples/
 | --- | --- | --- |
 | 01 | BlockingQueue 導入 | [`01-introduction`](examples/02-blocking-queue-tutorial/01-introduction) |
 | 02 | 最小構成の状態グラフ | [`02-state-graph`](examples/02-blocking-queue-tutorial/02-state-graph) |
+| 03 | 構成を大きくする | [`03-larger-config`](examples/02-blocking-queue-tutorial/03-larger-config) |
 
 全体の章構成は次のとおりです。未作成の章は学習の進行に合わせて追加します。
 

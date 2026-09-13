@@ -201,7 +201,7 @@ TLC の `7 states generated` は、各状態から遷移先として作られた
 
 ## 次に読むもの
 
-- [BlockingQueue Tutorial / Larger Configuration](https://learning.tlapl.us/blocking-queue/larger-config/) — 構成を大きくし、最小モデルの成功を一般化できるか調べる
+- [構成を大きくする](../03-larger-config) — consumer を増やし、最小モデルの成功を一般化できるか調べる
 - [BlockingQueue 導入](../01-introduction) — 2 変数と各アクションのモデル化を復習する
 
 ## 参考資料
