@@ -201,7 +201,7 @@ S7 に相当する `waitSet = {p1, c1, c2}` のノードには、依然として
 
 ## 次に読むもの
 
-- [BlockingQueue Tutorial / Debug State Graph](https://learning.tlapl.us/blocking-queue/debug-config/) — producer と consumer を入れ替えた構成で状態グラフを調べる
+- [状態グラフのデバッグ](../04-debug-config) — producer と consumer を入れ替えた p2c1b1 を対話的に探索する
 - [最小構成の状態グラフ](../02-state-graph) — 4 状態と 6 遷移の読み方を復習する
 
 ## 参考資料
