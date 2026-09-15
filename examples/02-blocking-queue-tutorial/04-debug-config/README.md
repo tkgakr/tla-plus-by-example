@@ -224,7 +224,7 @@ TLC の既定のデッドロック検出ではなく**不変条件として明�
 
 ## 次に読むもの
 
-- [BlockingQueue Tutorial / Safety (Deadlock)](https://learning.tlapl.us/blocking-queue/deadlock/) — デッドロックを不変条件で表す
+- [デッドロックの安全性](../05-safety) — 「全員待機」を不変条件として書く
 - [構成を大きくする](../03-larger-config) — p1c2b1 の 14 状態と反例を復習する
 
 ## 参考資料
