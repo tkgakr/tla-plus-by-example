@@ -66,6 +66,7 @@ examples/
 | 03 | 構成を大きくする | [`03-larger-config`](examples/02-blocking-queue-tutorial/03-larger-config) |
 | 04 | 状態グラフのデバッグ | [`04-debug-config`](examples/02-blocking-queue-tutorial/04-debug-config) |
 | 05 | デッドロックの安全性 | [`05-safety`](examples/02-blocking-queue-tutorial/05-safety) |
+| 06 | 定数から変数へ | [`06-variables`](examples/02-blocking-queue-tutorial/06-variables) |
 
 全体の章構成は次のとおりです。未作成の章は学習の進行に合わせて追加します。
 

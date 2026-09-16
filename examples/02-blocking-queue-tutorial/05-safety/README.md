@@ -189,7 +189,7 @@ TLC が出すのはそれと同じ現象の 8 状態です。しかも、各状�
 
 ## 次に読むもの
 
-- [BlockingQueue Tutorial / Constants to Variables](https://learning.tlapl.us/blocking-queue/constants-to-variables/) — 一回の探索で複数構成を扱う
+- [定数から変数へ](../06-variables) — 一回の探索で複数構成を扱う（[上流ページ](https://learning.tlapl.us/blocking-queue/variables/)）
 - [状態グラフのデバッグ](../04-debug-config) — p2c1b1 の 2 つのデッドロックを対話的に探索する
 - [構成を大きくする](../03-larger-config) — 同じ 8 状態が `Deadlock reached` として出る様子を復習する
 
