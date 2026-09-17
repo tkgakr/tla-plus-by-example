@@ -236,7 +236,7 @@ java -cp "$(ls -d ~/.vscode/extensions/tlaplus.vscode-ide-*/tools/tla2tools.jar 
 
 ## 次に読むもの
 
-- [BlockingQueue Tutorial / Symmetry Sets](https://learning.tlapl.us/blocking-queue/symmetry/) — ID の置換を同一視して状態を減らす
+- [対称性集合](../07-symmetry) — ID の置換を同一視して状態を減らす（[上流ページ](https://learning.tlapl.us/blocking-queue/symmetry/)）
 - [デッドロックの安全性](../05-safety) — この章の反例と同じ 8 状態を、固定構成で読む
 - [構成を大きくする](../03-larger-config) — `.cfg` を書き分けていた頃のやり方を復習する
 
