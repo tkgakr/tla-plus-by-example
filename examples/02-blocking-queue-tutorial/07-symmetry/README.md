@@ -357,7 +357,7 @@ TLC が対称性のもとで行うライブネス検査は健全ではなく、�
 
 ## 次に読むもの
 
-- [BlockingQueue Tutorial / Deadlock Condition](https://learning.tlapl.us/blocking-queue/deadlock/) — 4 節の表の規則性を性質として書き下す
+- [デッドロック条件](../08-deadlock-condition) — 4 節の表の規則性を不等式として書き下す（[上流ページ](https://learning.tlapl.us/blocking-queue/inequation/)）
 - [定数から変数へ](../06-variables) — 57,254 状態の内訳と、構成を変数にした理由
 - [デッドロックの安全性](../05-safety) — この章の反例と同じ 8 状態を、固定構成で読む
 
