@@ -324,7 +324,7 @@ consumer 用に待機集合を分ければ、状態 6 の `notify` は必ず `p1
 
 ## 次に読むもの
 
-- [BlockingQueue Tutorial / VIEW](https://learning.tlapl.us/blocking-queue/view/) — 性質に不要なバッファ内容を捨てて状態を減らす
+- [`VIEW` による抽象化](../09-view) — 性質に不要なバッファ内容を捨てて状態を減らす（[上流ページ](https://learning.tlapl.us/blocking-queue/view/)）
 - [対称性集合](../07-symmetry) — 6 節の実行を可能にしている削減
 - [定数から変数へ](../06-variables) — 5 節で不等式にまとめた元の表
 

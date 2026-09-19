@@ -69,6 +69,7 @@ examples/
 | 06 | 定数から変数へ | [`06-variables`](examples/02-blocking-queue-tutorial/06-variables) |
 | 07 | 対称性集合 | [`07-symmetry`](examples/02-blocking-queue-tutorial/07-symmetry) |
 | 08 | デッドロック条件 | [`08-deadlock-condition`](examples/02-blocking-queue-tutorial/08-deadlock-condition) |
+| 09 | `VIEW` による抽象化 | [`09-view`](examples/02-blocking-queue-tutorial/09-view) |
 
 全体の章構成は次のとおりです。未作成の章は学習の進行に合わせて追加します。
 
